@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+  It's a framework like React that sits on top of Node.js and can both simplify requests as well as add extra functionality like routing and middleware.
+
 - [ ] Describe Middleware?
+
+  It's an array of functions that are executed in the order that they are introduced. It can be built-in, created by third parties or made custom by us to simplify and make our code more modular.
 
 - [ ] Describe a Resource?
 
-- [ ] What can the API return to help clients know if a request was successful?
+  The data or information that is being intercted with by your API.
 
-- [ ] How can we partition our application into sub-applications?
+* [ ] What can the API return to help clients know if a request was successful?
+
+  It can return a succesful status code to indicate success or failure of a request.
+
+* [ ] How can we partition our application into sub-applications?
+
+  By using express Router to create modular sub applications that are only concerned with the specific resource they are interacting with.
 
 ## Project Setup
 
