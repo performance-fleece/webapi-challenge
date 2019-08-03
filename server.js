@@ -13,4 +13,7 @@ server.use('/api/project', projectRouter);
 function logger(req, res, next) {
   const time = new Date();
   console.log(`${req.method} to ${req.path} at ${time.toISOString()}`);
+  next();
 }
+
+module.exports = server;
