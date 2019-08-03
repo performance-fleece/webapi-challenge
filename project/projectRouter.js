@@ -33,7 +33,7 @@ router.post('/', validateProject, async (req, res) => {
     res.status(201).json(project);
   } catch (err) {
     console.log(err);
-    res.status(500).json({ errorMessage: 'Error creating Proeject' });
+    res.status(500).json({ errorMessage: 'Error creating Project' });
   }
 });
 
