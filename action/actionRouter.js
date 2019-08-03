@@ -103,7 +103,7 @@ async function validateActionId(req, res, next) {
     const { id } = req.params;
     const action = await Actions.get(id);
     console.log(action);
-    if (Object.keys(action).length) {
+    if (action) {
       req.action = action;
       next();
     } else {
